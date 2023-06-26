@@ -3,7 +3,7 @@ const app = express();
 const morgan = require("morgan");
 const postBank = require("./postBank");
 
-const PORT = 1337;
+const {PORT = 1337} = process.env;
 
 app.use(morgan("dev"));
 
